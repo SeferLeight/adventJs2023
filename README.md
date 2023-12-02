@@ -1,3 +1,5 @@
+![AdventJS](./src/images/adventJs.png)
+
 # Advent JS 2023
 
 Soluciones a desafíos de AdventJs del año 2023 en typeScript
