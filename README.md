@@ -4,11 +4,15 @@ Soluciones a desafíos de AdventJs del año 2023 en typeScript
 
 ## Instalación
 
+Al momento de descargar el proyecto, instalar las dependencias
+
 ```
 npm install
 ```
 
 ## Uso
+
+Para mostrar ejemplos de las solcuciones a los problemas
 
 ```
 npm run dev
@@ -16,4 +20,8 @@ npm run dev
 
 ## Tests
 
-Información sobre cómo contribuir al proyecto.
+Ejecutar los test con Jest
+
+```
+npm test
+```
