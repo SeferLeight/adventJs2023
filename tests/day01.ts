@@ -1,4 +1,4 @@
-import { findFirstRepeated } from '../src/solutions/solution01'; // Add the import statement
+import { findFirstRepeated } from '../src/solutions/day01'; // Add the import statement
 
 test('Day 1 - test 1', () => {
 	expect(findFirstRepeated([2, 1, 3, 5, 3, 2])).toBe(3);

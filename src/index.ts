@@ -1,3 +1,4 @@
-import { findFirstRepeated } from './solutions/solution01';
+import { findFirstRepeated } from './solutions/day01';
 
-console.log('Day 1', findFirstRepeated([2, 1, 3, 5, 3, 2]));
+const gifts: number[] = [2, 1, 3, 5, 3, 2];
+console.log('Day 1', gifts, findFirstRepeated(gifts));
