@@ -10,3 +10,15 @@ export function findFirstRepeated(gifts: number[]): number {
 	}
 	return firstRepeated;
 }
+
+export function findFirstRepeatedOptimized(gifts: number[]): number {
+	const giftsUniques: Set<number> = new Set<number>();
+
+	for (const gift of gifts) {
+		if (giftsUniques.has(gift)) {
+			return gift;
+		}
+		giftsUniques.add(gift);
+	}
+	return -1;
+}
