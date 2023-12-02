@@ -13,3 +13,15 @@ export function manufacture(gifts: string[], materials: string): string[] {
 
 	return giftManufacturable;
 }
+
+export function manufactureOptimized(gifts: string[], materials: string) {
+	const materialSet = new Set(materials.split(''));
+	const giftManufacturable: string[] = gifts.filter((gift) => {
+		const giftWords = gift.split('');
+		for (const word of giftWords) {
+			if (!materialSet.has(word)) return false;
+		}
+		return true;
+	});
+	return giftManufacturable;
+}
