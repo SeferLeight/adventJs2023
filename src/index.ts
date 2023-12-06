@@ -3,6 +3,7 @@ import { manufacture } from "./solutions/day02";
 import { findNaughtyStep } from "./solutions/day03";
 import { decode } from "./solutions/day04";
 import { cyberReindeer } from "./solutions/day05";
+import { maxDistance } from "./solutions/day06";
 
 const day01Example = {
 	gifts: [2, 1, 3, 5, 3, 2],
@@ -91,4 +92,17 @@ console.log(
 		"...*..S*..",
 		"...*...S..",
 	]
+);
+
+const day06Example = {
+	movements: ">>*<",
+};
+console.log(
+	"Day 6",
+	"Movements:",
+	day06Example.movements,
+	"Max Distance:",
+	maxDistance(day06Example.movements),
+	"Expected:",
+	2
 );
