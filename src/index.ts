@@ -2,6 +2,7 @@ import { findFirstRepeated } from "./solutions/day01";
 import { manufacture } from "./solutions/day02";
 import { findNaughtyStep } from "./solutions/day03";
 import { decode } from "./solutions/day04";
+import { cyberReindeer } from "./solutions/day05";
 
 const day01Example = {
 	gifts: [2, 1, 3, 5, 3, 2],
@@ -63,4 +64,31 @@ console.log(
 	decode(day04Example.message),
 	"Expected:",
 	"santaclaus"
+);
+
+const day05Example = {
+	road: "S..|...|..",
+	time: 10,
+};
+console.log(
+	"Day 5",
+	"Road:",
+	day05Example.road,
+	"Time:",
+	day05Example.time,
+	"cyberReindeer:",
+	cyberReindeer(day05Example.road, day05Example.time),
+	"Expected:",
+	[
+		"S..|...|..",
+		".S.|...|..",
+		"..S|...|..",
+		"..S|...|..",
+		"..S|...|..",
+		"...S...*..",
+		"...*S..*..",
+		"...*.S.*..",
+		"...*..S*..",
+		"...*...S..",
+	]
 );
