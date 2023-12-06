@@ -1,6 +1,7 @@
-import { findFirstRepeated } from './solutions/day01';
-import { manufacture } from './solutions/day02';
-import { findNaughtyStep } from './solutions/day03';
+import { findFirstRepeated } from "./solutions/day01";
+import { manufacture } from "./solutions/day02";
+import { findNaughtyStep } from "./solutions/day03";
+import { decode } from "./solutions/day04";
 
 const day01Example = {
 	gifts: [2, 1, 3, 5, 3, 2],
@@ -8,45 +9,58 @@ const day01Example = {
 };
 
 console.log(
-	'Day 1',
-	'Gifts',
+	"Day 1",
+	"Gifts",
 	day01Example.gifts,
-	'First Gift Repeated',
+	"First Gift Repeated",
 	findFirstRepeated(day01Example.gifts),
-	'Expected',
+	"Expected",
 	day01Example.expected
 );
 
 const day02Example = {
-	gifts: ['tren', 'oso', 'pelota'],
-	materials: 'tronesa',
-	expected: ['tren', 'oso'],
+	gifts: ["tren", "oso", "pelota"],
+	materials: "tronesa",
+	expected: ["tren", "oso"],
 };
 console.log(
-	'Day 2',
-	'Gifts:',
+	"Day 2",
+	"Gifts:",
 	day02Example.gifts,
-	'Materials:',
+	"Materials:",
 	day02Example.materials,
-	'Gifts Manufacturable:',
+	"Gifts Manufacturable:",
 	manufacture(day02Example.gifts, day02Example.materials),
-	'Expected:',
+	"Expected:",
 	day02Example.expected
 );
 
 const day03Example = {
-	original: 'abcd',
-	modified: 'abcde',
-	expected: 'e',
+	original: "abcd",
+	modified: "abcde",
+	expected: "e",
 };
 console.log(
-	'Day 3',
-	'Original:',
+	"Day 3",
+	"Original:",
 	day03Example.original,
-	'Modified:',
+	"Modified:",
 	day03Example.modified,
-	'Naughty Step:',
+	"Naughty Step:",
 	findNaughtyStep(day03Example.original, day03Example.modified),
-	'Expected:',
+	"Expected:",
 	day03Example.expected
+);
+
+const day04Example = {
+	message: "sa(u(cla)atn)s",
+};
+console.log(
+	"Day 4",
+	"Message:",
+	day04Example.message,
+	"Decoded:",
+	decode(day04Example.message),
+	"Expected:",
+	"santaclaus"
 );
