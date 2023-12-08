@@ -5,6 +5,8 @@ import { decode } from "./solutions/day04";
 import { cyberReindeer } from "./solutions/day05";
 import { maxDistance } from "./solutions/day06";
 
+import { organizeGifts } from "./solutions/day08";
+
 import { drawGift } from "./solutions/day07";
 
 const day01Example = {
@@ -124,4 +126,18 @@ console.log(
 	drawGift(day07Example.size, day07Example.symbol),
 	"Expected:",
 	"***\n* *\n***\n"
+);
+
+const day08Example = {
+	gifts: "77a",
+};
+
+console.log(
+	"Day 8",
+	"Gifts:",
+	day08Example.gifts,
+	"Organized Gifts:",
+	organizeGifts(day08Example.gifts),
+	"Expected:",
+	"[a]{a}{a}(aaaaaaa)"
 );

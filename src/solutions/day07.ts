@@ -1,5 +1,5 @@
 export function drawGift(size: number, symbol: string) {
-	let result = "\n";
+	let result = "";
 	//half up
 	for (let i = 0; i < size; i++) {
 		for (let j = 0; j < size * 2 - 1; j++) {
