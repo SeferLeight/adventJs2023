@@ -5,6 +5,8 @@ import { decode } from "./solutions/day04";
 import { cyberReindeer } from "./solutions/day05";
 import { maxDistance } from "./solutions/day06";
 
+import { drawGift } from "./solutions/day07";
+
 const day01Example = {
 	gifts: [2, 1, 3, 5, 3, 2],
 	expected: 3,
@@ -105,4 +107,21 @@ console.log(
 	maxDistance(day06Example.movements),
 	"Expected:",
 	2
+);
+
+const day07Example = {
+	size: 3,
+	symbol: "*",
+};
+
+console.log(
+	"Day 7",
+	"Size:",
+	day07Example.size,
+	"Symbol:",
+	day07Example.symbol,
+	"Gift:",
+	drawGift(day07Example.size, day07Example.symbol),
+	"Expected:",
+	"***\n* *\n***\n"
 );
