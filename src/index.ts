@@ -4,10 +4,9 @@ import { findNaughtyStep } from "./solutions/day03";
 import { decode } from "./solutions/day04";
 import { cyberReindeer } from "./solutions/day05";
 import { maxDistance } from "./solutions/day06";
-
-import { organizeGifts } from "./solutions/day08";
-
 import { drawGift } from "./solutions/day07";
+import { organizeGifts } from "./solutions/day08";
+import { adjustLights } from "./solutions/day09";
 
 const day01Example = {
 	gifts: [2, 1, 3, 5, 3, 2],
@@ -140,4 +139,18 @@ console.log(
 	organizeGifts(day08Example.gifts),
 	"Expected:",
 	"[a]{a}{a}(aaaaaaa)"
+);
+
+const day09Example = {
+	lights: ["🔴", "🔴", "🟢", "🟢", "🔴"],
+};
+
+console.log(
+	"Day 9",
+	"Lights:",
+	day09Example.lights,
+	"Adjusted Lights:",
+	adjustLights(day09Example.lights),
+	"Expected:",
+	2
 );
