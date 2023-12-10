@@ -7,6 +7,7 @@ import { maxDistance } from "./solutions/day06";
 import { drawGift } from "./solutions/day07";
 import { organizeGifts } from "./solutions/day08";
 import { adjustLights } from "./solutions/day09";
+import { createChristmasTree } from "./solutions/day10";
 
 const day01Example = {
 	gifts: [2, 1, 3, 5, 3, 2],
@@ -153,4 +154,21 @@ console.log(
 	adjustLights(day09Example.lights),
 	"Expected:",
 	2
+);
+
+const day10Example = {
+	ornaments: "xyz",
+	height: 3,
+};
+
+console.log(
+	"Day 10",
+	"Ornaments:",
+	day10Example.ornaments,
+	"Height:",
+	day10Example.height,
+	"Christmas Tree:",
+	createChristmasTree(day10Example.ornaments, day10Example.height),
+	"Expected:",
+	"  x\n y x\nz x y\n  |\n"
 );
