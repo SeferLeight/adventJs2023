@@ -8,8 +8,8 @@ import { drawGift } from './solutions/day07';
 import { organizeGifts } from './solutions/day08';
 import { adjustLights } from './solutions/day09';
 import { createChristmasTree } from './solutions/day10';
-
 import { getIndexsForPalindrome } from './solutions/day11';
+import { checkIsValidCopy } from './solutions/day12';
 
 const day01Example = {
 	gifts: [2, 1, 3, 5, 3, 2],
@@ -187,4 +187,21 @@ console.log(
 	getIndexsForPalindrome(day11Example.word),
 	'Expected:',
 	[]
+);
+
+const day12Example = {
+	original: 'Santa Claus is coming',
+	copy: 'sa#ta cl#us is comin#',
+};
+
+console.log(
+	'Day 12',
+	'Original:',
+	day12Example.original,
+	'Copy:',
+	day12Example.copy,
+	'Is Valid Copy:',
+	checkIsValidCopy(day12Example.original, day12Example.copy),
+	'Expected:',
+	true
 );
