@@ -10,6 +10,7 @@ import { adjustLights } from './solutions/day09';
 import { createChristmasTree } from './solutions/day10';
 import { getIndexsForPalindrome } from './solutions/day11';
 import { checkIsValidCopy } from './solutions/day12';
+import { calculateTime } from './solutions/day13';
 
 const day01Example = {
 	gifts: [2, 1, 3, 5, 3, 2],
@@ -204,4 +205,18 @@ console.log(
 	checkIsValidCopy(day12Example.original, day12Example.copy),
 	'Expected:',
 	true
+);
+
+const day13Example = {
+	deliveries: ['00:00:00', '00:10:00', '02:00:00'],
+};
+
+console.log(
+	'Day 13',
+	'Deliveries:',
+	day13Example.deliveries,
+	'Time:',
+	calculateTime(day13Example.deliveries),
+	'Expected:',
+	'02:10:00'
 );
